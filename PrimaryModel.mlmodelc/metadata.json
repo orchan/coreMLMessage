@@ -1,0 +1,63 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Panda's SMS classifier model",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Int64",
+        "type" : "Int64",
+        "name" : "classLabel",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "keyType" : "Int64",
+        "formattedType" : "Dictionary (Int64 → Double)",
+        "type" : "Dictionary",
+        "name" : "classProbability",
+        "shortDescription" : ""
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "author" : "Baye",
+    "specificationVersion" : 1,
+    "license" : "Private",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_glmClassifier"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 14000)",
+        "shortDescription" : "",
+        "shape" : "[14000]",
+        "name" : "input",
+        "type" : "MultiArray"
+      }
+    ],
+    "classLabels" : [
+      "0",
+      "1",
+      "2"
+    ],
+    "generatedClassName" : "PrimaryModel",
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "6.0",
+      "com.github.apple.coremltools.source" : "scikit-learn==1.1.2"
+    },
+    "method" : "predict"
+  }
+]
