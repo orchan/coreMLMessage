@@ -1,0 +1,51 @@
+[
+  {
+    "shortDescription" : "A model trained to classify spam text messages.",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "label",
+        "shortDescription" : "Text label"
+      }
+    ],
+    "version" : "0.1",
+    "modelParameters" : [
+
+    ],
+    "author" : "Jason Clardy",
+    "specificationVersion" : 3,
+    "license" : "--",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.14",
+      "tvOS" : "12.0",
+      "watchOS" : "5.0",
+      "iOS" : "12.0",
+      "macCatalyst" : "12.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_textClassifier"
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "text",
+        "shortDescription" : "Input text"
+      }
+    ],
+    "classLabels" : [
+      "spam",
+      "safe"
+    ],
+    "generatedClassName" : "SpamClassifier",
+    "userDefinedMetadata" : {
+
+    },
+    "method" : "predict"
+  }
+]
